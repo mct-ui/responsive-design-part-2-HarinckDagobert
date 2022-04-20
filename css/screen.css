@@ -439,27 +439,27 @@ a:focus {
 
 @media (min-width: 768px) {
     .c-footer {
-        gap: 24px;
-        justify-content: space-between;
-    }
-
-    .c-footer__logo {
         justify-content: center;
     }
 
+    .c-footer__logo {
+    }
+
     .c-footer__nav {
-        display: block;
-        flex-direction: row;
-        width: 0%;
+        width: 29%;
     }
 }
 
 @media (min-width: 992px) {
     .c-footer {display: flex;}
 
-    .c-footer__logo {}
+    .c-footer__logo {
+        order: -1
+    }
 
-    .c-footer__logo .c-logo {}
+    .c-footer__logo .c-logo {
+        order: 0
+    }
 
     .c-footer__nav {}
 }
